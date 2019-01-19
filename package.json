@@ -1,12 +1,11 @@
 {
-    "name": "papyfacts-api",
+    "name": "papyquotes-api",
     "author": "Thomas Couderc <thomas.couderc@gmail.com>",
-    "homepage": "http://papyfacts.herokuapp.com",
     "private": false,
-    "description": "Papy facts API",
+    "description": "Papy quotes API",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/elzinko/papyfacts-api.git"
+        "url": "git+https://github.com/elzinko/papyquotes-api.git"
     },
     "scripts": {
         "start": "node index.js"
@@ -20,14 +19,17 @@
     },
     "config": {},
     "bugs": {
-        "url": "https://github.com/elzinko/papyfacts-api/issues"
+        "url": "https://github.com/elzinko/papyquotes-api/issues"
     },
     "version": "1.0.0",
     "main": "index.js",
     "keywords": [
         "papy",
-        "facts",
-        "api"
+        "quotes",
+        "api",
+        "javascript",
+        "node",
+        "express"
     ],
     "license": "GPL-3.0"
 }

@@ -4,18 +4,20 @@
 
 This API is a list of submersive quotes from Papy.
 
-## Preambule
+https://papyquotes-api.herokuapp.com/quotes
+
+## What you need
 
 You need to install npm before
 
-## Server start
+## How to start server
 
 ```
 npm install
 npm start
 ```
 
-## API description
+## What does contain this f***** API
 
 * Quote list :
 
@@ -29,7 +31,9 @@ open http://localhost:8085/quotes
 open http://localhost:8085/quote
 ```
 
-## Deploy on Heroku
+## I want my own Heroku
+
+But wait! WTF is Heroku ?! Check https://www.heroku.com/home
 
 * create an account
 
@@ -61,7 +65,8 @@ heroku create --remote papyquotes-api
 git push heroku master
 ```
 
+* check the logs
 
-## Chek deployed app
-
-* open https://git.heroku.com/infinite-brushlands-35208.git
+```
+heroku logs --tail
+```

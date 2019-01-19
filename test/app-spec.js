@@ -15,26 +15,41 @@ describe('app', function() {
             expect(app.listen.calledWith(8085)).to.be.true;
         });
 
-        it('expect return a fact', function() {
+        it('expect return a qote', function() {
             app.get = sinon.spy();
-
             app.start();
-
-            expect(app.get.calledWith('/fact', app.__getFact)).to.be.true;
+            expect(app.get.calledWith('/quote', app.__getQuote)).to.be.true;
         });
     });
 
-    describe('__getFact', function() {
-        it('expect return fact', function() {
-            var fact = { quote: "J'encule le peuple, et il me le rend bien." };
+    describe('__getQuote', function() {
+        it('expect return quote', function() {
+            var quote = { quote: "J'encule le peuple, et il me le rend bien." };
             var request = {};
             var response = {
                 send: sinon.spy()
             };
 
             app.__getFact(request, response);
+            expect(response.send.calledWith(quote)).to.be.true;
+        });
+    });
 
-            expect(response.send.calledWith(fact)).to.be.true;
+    describe('__getQuotes', function() {
+        it('expect return quotes', function() {
+
+            var quotes = [
+                { quote: "Mais, qu'est-ce-que je fais là ?<br /> Je me fous de l\'argent et des femmes." },
+                { quote: "J'encule le peuple, et il me le rend bien." }
+            ];
+
+            var request = {};
+            var response = {
+                send: sinon.spy()
+            };
+
+            app.__getQuotes(request, response);
+            expect(response.send.calledWith(quotes)).to.be.true;
         });
     });
 

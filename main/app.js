@@ -1,13 +1,17 @@
 var express = require('express');
 var app = module.exports = express();
 app.start = function() {
-    app.get('/fact', app.__getFact);
+    app.get('/quotes', app.__getQuotes);
+    app.get('/quote', app.__getQuote);
     app.listen(8085);
-    console.log(quotes)
-    console.log('Papy fact server started on port 8085...');
+    console.log('Papy quotes server started on port 8085...');
 }
 
-app.__getFact = function(request, response) {
+app.__getQuotes = function(request, response) {
+    return response.send(quotes);
+};
+
+app.__getQuote = function(request, response) {
     var quote = quotes[Math.floor(Math.random() * quotes.length - 1)];
     console.log("selected quote : " + quote.quote);
     return response.send(quote);

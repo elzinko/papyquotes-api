@@ -8,7 +8,9 @@
         "type": "git",
         "url": "git+https://github.com/elzinko/papyfacts-api.git"
     },
-    "scripts": {},
+    "scripts": {
+        "start": "node index.js"
+    },
     "dependencies": {
         "express": "^4.16.4"
     },

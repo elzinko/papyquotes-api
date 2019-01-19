@@ -3,8 +3,9 @@ var app = module.exports = express();
 app.start = function() {
     app.get('/quotes', app.__getQuotes);
     app.get('/quote', app.__getQuote);
-    app.listen(8085);
-    console.log('Papy quotes server started on port 8085...');
+    const port = process.env.PORT || 3000;
+    app.listen(port);
+    console.log('Papy quotes server started on port ' + port);
 }
 
 app.__getQuotes = function(request, response) {

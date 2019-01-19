@@ -1,0 +1,31 @@
+{
+    "name": "papyfacts-api",
+    "author": "Thomas Couderc <thomas.couderc@gmail.com>",
+    "homepage": "http://papyfacts.herokuapp.com",
+    "private": false,
+    "description": "Papy facts API",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/elzinko/papyfacts-api.git"
+    },
+    "scripts": {},
+    "dependencies": {
+        "express": "^4.16.4"
+    },
+    "devDependencies": {
+        "chai": "^4.2.0",
+        "sinon": "^7.2.2"
+    },
+    "config": {},
+    "bugs": {
+        "url": "https://github.com/elzinko/papyfacts-api/issues"
+    },
+    "version": "1.0.0",
+    "main": "index.js",
+    "keywords": [
+        "papy",
+        "facts",
+        "api"
+    ],
+    "license": "GPL-3.0"
+}

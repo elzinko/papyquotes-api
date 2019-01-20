@@ -1,6 +1,7 @@
 {
     "name": "papyquotes-api",
     "author": "Thomas Couderc <thomas.couderc@gmail.com>",
+    "homepage": "https://papyquotes-api.herokuapp.com/quotes",
     "private": false,
     "description": "Papy quotes API",
     "repository": {

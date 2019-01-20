@@ -19,7 +19,7 @@ app.__getQuote = function(request, response) {
 };
 
 var quotes = [
-    { quote: "Mais, qu'est-ce-que je fais là ?<br /> Je me fous de l\'argent et des femmes." },
+    { quote: "Mais, qu'est-ce-que je fais là ?\nJe me fous de l\'argent et des femmes." },
     { quote: "J'encule le peuple, et il me le rend bien." },
     { quote: "Avec la solitude comme seul apôtre,<br />Puisque paraît-il, l'enfer c'est les autres." },
     { quote: "J’ai joué ton cœur à pile ou face, la pièce est tombée sur le côté." },
@@ -33,7 +33,7 @@ var quotes = [
     { quote: "Les gens disent que je suis bizarre." },
     { quote: "J'arrive en mode Rambo, ma mitraillette fait clic-clic.<br />Pour vous, bande de tapettes, j'vais ramener toute ma clique-clique." },
     { quote: "Si sucer faisait grandir, comme Goliath tu serais un géant." },
-    { quote: "Hipster, ta chatte est sèche mais je la check avec du beurre.<br /> J'culbute ta go dans ma gova mais elle vaut pas ta sœur." },
+    { quote: "Hipster, ta chatte est sèche mais je la check avec du beurre.\nJ'culbute ta go dans ma gova mais elle vaut pas ta sœur." },
     { quote: "J'me torche dans ta be-bar, j'chie sur ton art et sur ton mouvement." },
     { quote: "J'crois qu'il sait pas qui j'suis." },
     { quote: "Dans ma cave, t'as été élu client du mois." },
